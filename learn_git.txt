@@ -1,0 +1,37 @@
+git学习笔记
+2020年10月27日16:42:53
+网址 https://www.liaoxuefeng.com/wiki/896043488029600/896202780297248
+git 是一个分布式的版本管理系统 可以很方便的将版本信息 记录并加以保留
+仓库 目录 C:/Users/yxc_pku/learngit/.git/
+禁止在windows下使用Windows自带的文本编辑器打开文件 由于编码形式的不同 这会导致乱码
+1. 新建readme文件
+用系统方式来创建readme.txt 文件 并用下面的方式 来实现加入git仓库
+git add readme.txt
+用下面的方式，将代码 提交到仓库
+git commit -m "wrote a readme file"
+（注意 add 和commit 不相同 add是新增文件 commit是提交文件进入仓库）
+    总结：添加文件到Git仓库，分两步：
+	使用命令git add <file>，注意，可反复多次使用，添加多个文件；
+	使用命令git commit -m <message>，完成。
+
+
+文件工作区---_add__--->暂存区---_commit_-->存储库
+
+可以 git add *.cpp 
+或者 git add --all 来实现提交代码
+
+add  之后 使用commit 来提交，提交信息应当写好，也可以修改提交信息。
+
+在add commit的过程中，随时可以用 git status查看代码的状态。
+使用 git log查看日志信息.
+
+删除 文件 git rm filename  
+这里 仍然需要提交从commit
+
+更名 git mv 旧名 新名
+
+2.增加分支 branch 
+git branch apple
+更名 git branch -m apple pear
+
+2.从github下载代码
